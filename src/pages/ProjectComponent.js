@@ -4,8 +4,6 @@ import {FaGithub} from "react-icons/fa";
 const ProjectComponent = ({
     activeGifLink, 
     staticImage, 
-    projectComponentClassName, 
-    projectDescriptionClassName, 
     projectTitle,
     projectDescription, 
     githubLink}) => {
@@ -23,9 +21,9 @@ const ProjectComponent = ({
     return (    
         <div id='project-parent'>
             <a href={githubLink} target="_blank" rel="noreferrer">
-                <img className={projectComponentClassName} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} src={currentProjectDisplayImage} alt=""/>
+                <img className='project-img' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} src={currentProjectDisplayImage} alt=""/>
             </a>
-            <div className={projectDescriptionClassName}>
+            <div className='project-desc'>
                 <h3>{projectTitle}</h3>
                 <p>{projectDescription}</p>
                 <a href={githubLink} target="_blank" rel="noreferrer"><FaGithub className="github-icon"></FaGithub></a>

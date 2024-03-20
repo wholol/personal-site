@@ -70,6 +70,18 @@ h1 {
     }
 }
 
+
+
+/* styling for the projects page */
+#github-link {
+    color: inherit;
+}
+
+#project-heading {
+    font-family: 'Helvetica';
+    font-size: 1.2rem;
+}
+
 .project-img {
     position: absolute;
     width: 480px;
@@ -123,9 +135,4 @@ h3 {
 
 p {
     color: rgb(173, 179, 184);
-}
-
-a{
-    color: black;
-    font-size: 1.2rem;
 }
