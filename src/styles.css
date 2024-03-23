@@ -1,64 +1,15 @@
 * {
     box-sizing: border-box;
+    font-family: 'Calibri';
 }
 
 body {
     margin: 0;
-}
-
-.navbar {
-    background-color: #272525;
-    color: white;
-    display: flex;
-    justify-content: flex-end; 
-    position: relative;
-}
-
-.navbar li {
-    display: inline;
-    margin: 2rem;
-    animation: fadeIn 5s;
-    font-family: 'Calibri';
-}
-
-.navbar a {
-    color: inherit;
-    text-decoration: none;
-}
-
-ul {
-    list-style-type: none;
-}
-
-.home-div {
-    position: absolute;
-    width: 1100px;
-    top: 100px;
-    left: 100px;
-}
-
-.welcome-text {
-    font-family: 'Calibri';
-    font-size: 5rem;
-    font-weight: 600;
-    margin: 0px;
-    padding: 20px;
-}
-
-.intro-text {
-    font-family: 'Calibri';
-    font-size: 3rem;
-    margin: 0px;
-    padding: 20px;
-}
-
-h1 {
-    animation: fadeIn 5s;
-    background-image: fadeIn 5s;
-}
-
-#background-color-page {
     background-color: rgb(17, 17, 19);
+}
+
+h1, h2, h3, p, li {
+    color: rgb(173, 179, 184);
 }
 
 @keyframes fadeIn {
@@ -71,6 +22,93 @@ h1 {
 }
 
 
+/** navbar styles **/
+.navbar {
+    background-color: #272525;
+    color: white;
+    display: flex;
+    justify-content: flex-end; 
+    position: relative;
+}
+
+.navbar li {
+    display: inline;
+    margin: 2rem;
+}
+
+.navbar a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/** Home page styling **/
+.Homepage
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    animation: fadeIn 5s;
+}
+
+.Home-firstHeading-text {
+    
+    font-size: 5rem;
+    margin: 0px;
+    padding: 20px;
+}
+
+.Home-secondHeading-text {
+    font-size: 3rem;
+    margin: 0px;
+    padding: 20px;
+    
+}
+
+.Home-description-text {
+    padding : 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 760px;
+}
+
+/* styling for the contact page*/
+
+.contact-heading {
+ text-align: center;
+}
+
+.icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: white;
+    border-radius: 50%;
+    height: 160px;
+    width: 160px;
+}
+
+.contact-page-icons {
+    display: flex;
+    justify-content: center;
+}
+
+#github-icon-contact-page {
+    color: rgb(0, 0, 0);
+    width: 100px;
+    height: 100px;
+}
+
+#linkedin-icon-contact-page {
+    margin: 30px;
+    color: rgb(24, 75, 151);
+}
 
 /* styling for the projects page */
 #github-link {
@@ -80,6 +118,10 @@ h1 {
 #project-heading {
     font-family: 'Helvetica';
     font-size: 1.2rem;
+}
+
+#github-icon {
+    color: black;
 }
 
 .project-img {
@@ -101,10 +143,7 @@ h1 {
     width: 450px;
     height: 150px;
     left: 500px;
-    top: 50px;
-    
-    border-color: black;
-    border: 10px;
+    top: 50px; 
     border-radius: 10px;
     text-align: center;
 }
@@ -126,13 +165,4 @@ h1 {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-}
-
-h3 {
-    font-size: 1rem;
-    color: rgb(173, 179, 184);
-}
-
-p {
-    color: rgb(173, 179, 184);
 }

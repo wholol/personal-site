@@ -1,10 +1,9 @@
-import ProjectComponent from "./ProjectComponent";
+import ProjectComponent from "../Components/ProjectComponent";
 import teapot from "../assets/teapot.png"
 import pathFinding from "../assets/pathFinding.png"
 import mandrelBrot from '../assets/mandelbrot.png'
 import rayTracer from '../assets/raytracer.png';
 import rayTracerActiveImg from '../assets/rayTracerActiveImg.png';
-import {FaGithub} from "react-icons/fa";
 
 const projectDescriptionRasterizer = "A 3D software renderer written from scratch with C++ and SDL2. Some features include Phong shading, Gouraud shading, flat shading, clipping and a camera";
 const projectDescriptionPathFinding = "A desktop application that simulates various path finding/graph search algorithms, written in C++ and SFML.";
@@ -34,7 +33,7 @@ const projectFactory = (activeGifLink,
 const Projects = () => {
 
     return(
-    <div id='background-color-page' className="ProjectComponents">
+    <div class='background-color-page' className="ProjectComponents">
         <p id='project-heading'>Here are some of me featured projects. You can find more projects that I have worked on on my <a id='github-link' href="https://github.com/wholol">GitHub</a> page.</p>  
         <ProjectComponent
             activeGifLink={"https://media.giphy.com/media/RlaeNoANQeAYzCNUwz/giphy.gif"} 

@@ -26,7 +26,7 @@ const ProjectComponent = ({
             <div className='project-desc'>
                 <h3>{projectTitle}</h3>
                 <p>{projectDescription}</p>
-                <a href={githubLink} target="_blank" rel="noreferrer"><FaGithub className="github-icon"></FaGithub></a>
+                <a href={githubLink} target="_blank" rel="noreferrer"><FaGithub id="github-icon"></FaGithub></a>
             </div>
         </div>
     )
